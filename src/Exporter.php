@@ -31,7 +31,7 @@ class Exporter
         fclose($this->tmpFile);
     }
 
-    public function setWriter(WriterInterface $writer)
+    public function setWriter(WriterInterface $writer): void
     {
         $this->writer = $writer;
     }
